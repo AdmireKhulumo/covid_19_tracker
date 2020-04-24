@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Typography from "@material-ui/core/Typography";
 
 import { Cards, Chart, CountryPicker } from "./components";
@@ -34,6 +35,14 @@ class App extends React.Component {
 				<Chart data={data} country={country} />
 
 				<Typography variant="body2">Made with ❤️ by Admire Khulumo</Typography>
+				<p></p>
+
+				<a
+					href="https://github.com/AdmireKhulumo/covid_19_tracker"
+					target="blank"
+				>
+					view source on github
+				</a>
 			</div>
 		);
 	}
